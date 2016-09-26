@@ -133,8 +133,8 @@ class ExactOnlineConfig(object):
     # ; If you want to change the values from your application, you need
     # ; to write your own routines.
 
-    def get_base_url(self):
-        return native_string(self.get('application', 'base_url'))
+    def get_response_url(self):
+        return native_string(self.get('application', 'response_url'))
 
     def get_client_id(self):
         return native_string(self.get('application', 'client_id'))
